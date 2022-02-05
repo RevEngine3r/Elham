@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">الهام</string>
+    <string name="main_text">سلام !
+        \n
+    من الهام هستم !
+        \n
+        من هرروز با هات حرف میزنم…
+        \n
+        حتما حرفامو گوش بده، بنویس و عمل کن…
+        \n
+        DadashReza.CoM
+    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="channel_description">به الهام دسترسی بده تا بهت بتونه حرفاشو بگه…</string>
+    <string name="content_text">گوشتو بیار جلو</string>
+    <string name="menu_home">الهام</string>
+    <string name="menu_fal">فال</string>
+    <string name="menu_help">سوال</string>
+    <string name="menu_about">در باره ی ما</string>
+    <string name="btn_fal">بگیر</string>
+    <string name="txt_hint">یه عدد بگو</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="splash_image">Splash image</string>
+    <string name="help_text">
+        حل مشکل نوتیفیکیشن ندادن برنامه
+        \n
+        <a href="#">Aparat</a>
+        \n\n\n
+        سورس برنامه در گیت هاب
+        \n
+        <a href="https://github.com/RevEngine3r/ElhamApp">Github</a>
+    </string>
+    <string name="revengine3r_ir">RevEngine3r.iR</string>
+</resources>
