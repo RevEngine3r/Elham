@@ -1,5 +1,6 @@
 package r.dadashreza.elham
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -49,6 +50,19 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         this.splashScreen(binding.imgSplash)
+        this.firstTimeNotification()
+    }
+
+    private fun firstTimeNotification() {
+        val sharedPref = getSharedPreferences("ElhamSharedPref", MODE_PRIVATE)
+
+        if (!sharedPref.getBoolean("isFirstRunDone", false)) {
+            Elham.ask(applicationContext, true)
+
+            val sharedPrefEdit = sharedPref.edit()
+            sharedPrefEdit.putBoolean("isFirstRunDone", true)
+            sharedPrefEdit.apply()
+        }
     }
 
     private fun splashScreen(imgSplash: ImageView) {

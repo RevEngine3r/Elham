@@ -1,17 +1,19 @@
 package r.dadashreza.elham.ui.help
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import r.dadashreza.elham.MainActivity
 import r.dadashreza.elham.R
 import r.dadashreza.elham.databinding.FragmentHelpBinding
+
 
 class HelpFragment : Fragment() {
 
@@ -32,16 +34,22 @@ class HelpFragment : Fragment() {
         _binding = FragmentHelpBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.textHelp.movementMethod = ScrollingMovementMethod()
         (activity as MainActivity).setBg(R.drawable.help_bg)
 
-        binding.imageView2.setOnClickListener {
+        binding.imageViewRevengine3r.setOnClickListener {
             Toast.makeText(context, "RevEngine3r.iR", Toast.LENGTH_LONG).show()
+        }
+
+        binding.buttonAparat.setOnClickListener {
+            startActivity(Utils.openUrl("https://www.aparat.com/v/aqTZv"))
+        }
+
+        binding.buttonGithub.setOnClickListener {
+            startActivity(Utils.openUrl("https://github.com/RevEngine3r/Elham"))
         }
 
         return root
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

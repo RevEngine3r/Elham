@@ -26,14 +26,10 @@
     <string name="txt_hint">یه عدد بگو</string>
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
     <string name="splash_image">Splash image</string>
-    <string name="help_text">
-        حل مشکل نوتیفیکیشن ندادن برنامه
-        \n
-        <a href="#">Aparat</a>
-        \n\n\n
-        سورس برنامه در گیت هاب
-        \n
-        <a href="https://github.com/RevEngine3r/ElhamApp">Github</a>
-    </string>
+    <string name="help_aparat">حل مشکل نوتیفیکیشن ندادن برنامه</string>
+    <string name="help_github">سورس برنامه در گیت هاب</string>
     <string name="revengine3r_ir">RevEngine3r.iR</string>
+    <string name="github">Github</string>
+    <string name="aparat">Aparat</string>
+    <string name="dadashreza_com">Dadashreza.com</string>
 </resources>

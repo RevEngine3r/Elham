@@ -43,8 +43,11 @@ class HomeFragment : Fragment() {
 
         if (arguments != null) {
             textView.movementMethod = ScrollingMovementMethod()
+            binding.imageViewDadashreza.visibility = View.INVISIBLE
+            binding.textDadashreza.visibility = View.INVISIBLE
             if (arguments?.getBoolean("isRand", false) == true) {
                 textView.text = mainActivity.applicationContext?.let { Elham.getRandElham(it) }
+                arguments?.remove("isRand")
             } else if (arguments?.getLong("fal", -1)!! > -1) {
                 textView.text = mainActivity.applicationContext?.let {
                     Elham.getElham(
@@ -52,11 +55,20 @@ class HomeFragment : Fragment() {
                         it
                     )
                 }
+                arguments?.remove("fal")
             }
-        } else {
+        }
+
+        if (textView.text.isEmpty()) {
+            binding.imageViewDadashreza.visibility = View.VISIBLE
+            binding.textDadashreza.visibility = View.VISIBLE
             homeViewModel.text.observe(viewLifecycleOwner) {
                 textView.text = it
             }
+        }
+
+        binding.imageViewDadashreza.setOnClickListener {
+            startActivity(Utils.openUrl("http://dadashreza.com/"))
         }
 
         mainActivity.setBg(R.drawable.home_bg)

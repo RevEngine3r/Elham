@@ -85,13 +85,13 @@ class Elham {
             return false
         }
 
-        fun ask(appContext: Context): Boolean {
+        fun ask(appContext: Context, force: Boolean = false): Boolean {
             if (!isChannelCreated) {
                 createNotificationChannel(appContext)
                 isChannelCreated = true
             }
 
-            if (!decide())
+            if (!force and !decide())
                 return false
 
             val bundle = Bundle()

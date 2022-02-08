@@ -9,8 +9,7 @@ class HomeViewModel : ViewModel() {
         value = "سلام !\n" +
                 "من الهام هستم !\n" +
                 "من هر روز با هات حرف میزنم…\n" +
-                "حتما حرفامو گوش بده، بنویس و عمل کن…\n" +
-                "DadashReza.CoM"
+                "حتما حرفامو گوش بده، بنویس و عمل کن…"
     }
     val text: LiveData<String> = _text
 }

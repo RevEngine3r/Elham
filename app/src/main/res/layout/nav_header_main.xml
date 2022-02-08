@@ -15,7 +15,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="135dp"
+        android:layout_height="129dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/ic_stat_icon_ntfcn_light" />
 </LinearLayout>
